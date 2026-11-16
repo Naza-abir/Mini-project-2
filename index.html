@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Naza Mobashirul Islam | Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
+    <!-- Navigation bar (mobile menu works with a CSS-only checkbox toggle) -->
+    <header class="sticky top-0 z-10 bg-slate-900/95 border-b border-slate-700">
+      <div
+        class="max-w-4xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between"
+      >
+        <p class="font-mono text-lg text-emerald-400">M.N.M. Islam</p>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer text-2xl text-emerald-400 select-none"
+          aria-label="Toggle menu"
+          >&#9776;</label
+        >
+
+        <nav
+          class="hidden peer-checked:block md:block w-full md:w-auto mt-4 md:mt-0"
+        >
+          <ul class="flex flex-col md:flex-row gap-3 md:gap-8 text-sm">
+            <li>
+              <a href="#about" class="hover:text-emerald-400 transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="hover:text-emerald-400 transition-colors"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-emerald-400 transition-colors"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-emerald-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6">
+      <!-- About -->
+      <section
+        id="about"
+        class="py-14 flex flex-col md:flex-row items-center gap-8 border-b border-slate-700"
+      >
+        <img
+          src="image.png"
+          alt="Portrait photo of Mohammad Naza Mobashirul Islam"
+          class="w-48 h-48 object-cover object-top rounded-lg border-2 border-emerald-400 shrink-0 hover:scale-105 transition-transform duration-300"
+        />
+        <div class="text-center md:text-left">
+          <p class="font-mono text-sm text-emerald-400 mb-2">
+            Computer Science &amp; Engineering, IIUC
+          </p>
+          <h1 class="font-mono text-3xl font-bold mb-3">
+            Mohammad Naza Mobashirul Islam
+          </h1>
+          <p class="text-slate-400 max-w-prose">
+            I'm a CSE student at International Islamic University Chittagong,
+            learning to build software with C, C++, and the web. I enjoy solving
+            problems in code and turning small ideas into working programs.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="py-14 border-b border-slate-700">
+        <h2 class="font-mono text-2xl font-bold mb-6">Skills</h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <li
+            class="bg-slate-800 border border-slate-700 rounded px-5 py-3 text-center font-mono text-emerald-400 hover:bg-emerald-400 hover:text-slate-900 transition-colors"
+          >
+            C
+          </li>
+          <li
+            class="bg-slate-800 border border-slate-700 rounded px-5 py-3 text-center font-mono text-emerald-400 hover:bg-emerald-400 hover:text-slate-900 transition-colors"
+          >
+            C++
+          </li>
+          <li
+            class="bg-slate-800 border border-slate-700 rounded px-5 py-3 text-center font-mono text-emerald-400 hover:bg-emerald-400 hover:text-slate-900 transition-colors"
+          >
+            HTML
+          </li>
+          <li
+            class="bg-slate-800 border border-slate-700 rounded px-5 py-3 text-center font-mono text-emerald-400 hover:bg-emerald-400 hover:text-slate-900 transition-colors"
+          >
+            CSS
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="py-14 border-b border-slate-700">
+        <h2 class="font-mono text-2xl font-bold mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article
+            class="bg-slate-800 border border-slate-700 border-l-4 border-l-emerald-400 rounded p-6 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-400/10 transition-all"
+          >
+            <h3 class="font-mono text-lg font-bold mb-2">Save the Bird</h3>
+            <p class="text-slate-400 text-sm">
+              A simple arcade-style game built in C++ where the player guides a
+              bird past obstacles, practicing logic, loops, and collision
+              handling.
+            </p>
+          </article>
+          <article
+            class="bg-slate-800 border border-slate-700 border-l-4 border-l-emerald-400 rounded p-6 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-400/10 transition-all"
+          >
+            <h3 class="font-mono text-lg font-bold mb-2">
+              Cafe Management System
+            </h3>
+            <p class="text-slate-400 text-sm">
+              A C++ console application for managing a small cafe's orders, menu
+              items, and billing, built to practice structured programming and
+              data handling.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-14">
+        <h2 class="font-mono text-2xl font-bold mb-4">Contact</h2>
+        <p class="text-slate-400 mb-6">
+          Email:
+          <a
+            href="mailto:C253089@ugrad.iiuc.ac.bd"
+            class="text-emerald-400 hover:underline break-all"
+            >C253089@ugrad.iiuc.ac.bd</a
+          >
+        </p>
+
+        <form class="flex flex-col gap-4 max-w-md">
+          <div class="flex flex-col gap-1">
+            <label for="name" class="text-sm text-slate-400">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="bg-slate-800 border border-slate-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-sm text-slate-400">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="bg-slate-800 border border-slate-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="message" class="text-sm text-slate-400">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="bg-slate-800 border border-slate-700 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="self-start bg-emerald-400 text-slate-900 font-bold px-6 py-2 rounded hover:bg-emerald-300 active:scale-95 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer
+      class="text-center text-sm text-slate-400 py-6 border-t border-slate-700"
+    >
+      <p>
+        Mohammad Naza Mobashirul Islam &mdash; &copy; 2026. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
